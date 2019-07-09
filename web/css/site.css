@@ -1,0 +1,1811 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-attachment: fixed;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+    color: #252a35d4;
+    font-weight: bold;
+}
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus, a:hover {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+header{
+    height: 3.5em;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.navbar{
+    float:right;
+    margin-right: 9em;
+}
+.nav-menu-top li a{
+    margin-left: 3em;
+    font-size: 1em;
+}
+.nav-menu-top li a:last-child{
+   right: 1em;
+
+}
+#mobile_menu{
+    display: none;
+}
+#datepicker{
+    border:none;
+    border-bottom: 1px solid #0B1022;
+}
+.form-group{
+    border: none !important;
+
+}
+.slider{
+    width: 100%;
+}
+.slick-slide{
+}
+td{
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+.description{
+    height: 9.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.img-thumbnail{
+    width: 19em;
+    height: 15em;
+    background-size: cover;
+}
+.go{
+    background-color: #ec971f;
+    color:#0B1022;
+}
+.delete{
+    background-color: #D8FA3C;
+    color:#0B1022;
+}
+.btn_add_new_events{
+    width: 100%;
+    background-color: #ec971f;
+    color:#0B1022;
+   /* visibility: hidden!important;*/
+}
+.event-update{
+    margin-top: 2em;
+}
+/*image event form*/
+.event_img_form{
+    width: 19em;
+    background-color: lightgray;
+    background-size: cover;
+}
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+   position: fixed;
+    margin-top: 5em;
+    /*background-color: #efefef;*/
+    text-align: center;
+}
+@media (min-width: 1050.99px) and (max-width: 1100px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 9em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 14em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1.2em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 1000.99px) and (max-width: 1050px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 8em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 13em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1.2em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1.2em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 950.99px) and (max-width: 1000px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 35px;
+        margin-right: 2px;
+    }
+    .services-grid{
+        width: 26em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 8em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 13em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 900.99px) and (max-width: 950px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+
+
+    /*Service*/
+    .services{
+        padding: 35px;
+        margin-right: 2px;
+    }
+    .services-grid{
+        width: 26em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 7em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 12em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 850.99px) and (max-width: 900px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 35px;
+        margin-right: 2px;
+    }
+    .services-grid{
+        width: 26em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 10em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 800.99px) and (max-width: 850px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .call_me{
+        z-index: 10000;
+    }
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+    }
+    /*Service*/
+    .services{
+        padding: 35px;
+        margin-right: 2px;
+    }
+    .services-grid{
+        width: 26em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 9em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 750.99px) and (max-width: 800px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 35px 15px;
+        margin-right: 2px;
+    }
+    .services-grid{
+        width: 24em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 7em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 700.99px) and (max-width: 750px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 35px 15px;
+        margin-right: 2px;
+    }
+
+    .services-grid{
+        width: 24em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+        margin-top: -36.9em;
+    }
+
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 70%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 7em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 650.99px) and (max-width: 700px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 35px 15px;
+        margin-right: 2px;
+    }
+
+    .services-grid{
+        width: 22em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+        margin-top: -35em;
+    }
+
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        /*
+        margin-left: 5em;
+         */
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 10em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 600.99px) and (max-width: 650px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+
+    .services{
+        padding: 35px 15px;
+        margin-right: 2px;
+    }
+
+    .services-grid{
+        width: 21em;
+    }
+    .services-grid:first-child{
+        float: right;
+    }
+    #services-grid-shop{
+        float: right;
+        margin-top: -35.5em;
+    }
+
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        /*
+        margin-left: 5em;
+         */
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 6em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 8em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 550.99px) and (max-width: 600px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 55px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 6em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 5em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 7em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 500.99px) and (max-width: 550px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 45px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 5em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 4em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 0.2em auto auto 5em;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 450.99px) and (max-width: 500px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 20px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 4em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 4em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 2px 17px;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 400.99px) and (max-width: 450px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 20px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2.5em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 2.7em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 2px 17px;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 350.99px) and (max-width: 400px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 20px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 2.2em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 2px 17px;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 300.99px) and (max-width: 350px){
+
+    .home, .services,.about,.portfolio,.touch{
+        height:auto;
+    }
+    .navbar{
+        max-height: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.1em;
+        margin-left:2px;
+    }
+    /*Language*/
+    .language-select{
+        font-size: 0.9em;
+    }
+    /*Call*/
+    .email-bt{
+        width: 2em;
+        height: 2em;
+        right: 2%;
+    }
+    .email-bt img{
+        width: 1.9em;
+
+    }
+    /*Service*/
+    .services{
+        padding: 100px 20px;
+        margin-right: 2px;
+    }
+    .services-grid button{
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    /*ABOUT*/
+    .about-grid {
+        /*width: 140%;
+        margin-left: -10px;*/
+    }
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about-grid h3 {
+        font-size: 1.2em;
+    }
+    .about-grid h4{
+        font-size: 1.2em;
+    }
+    .about-grid a{
+
+    }
+    /*Contact*/
+    .contact-grid{
+        margin: auto;
+        width: 90%;
+        font-size:  0.9em;
+    }
+    .field-radio_site, .field-radio_blog, .field-radio_catalog, .field-radio_internet_shop{
+        margin-left: 1.5em;
+    }
+    .contact-grid textarea {
+        margin-top: 1.2em;
+    }
+    .contact-grid button.more_btn {
+        font-size: 16px;
+        width: 17em;
+        background-color: #FF7400;
+        outline: none;
+        border: 1px solid #CCC;
+        font-weight: 500;
+        margin: 2px 17px;
+    }
+    .contact-grid ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-moz-placeholder {
+        font-size: 1em;
+    }
+
+    .contact-grid ::-ms-input-placeholder {
+        font-size: 1em;
+    }
+    .layer h3 {
+        top: 30%;
+        font-size: 25px;
+    }
+    /*Footer*/
+    .touch p {
+        font-size: 15px;
+    }
+    #mobile_menu{
+        display: none;
+    }
+}
+@media (min-width: 200.99px) and (max-width: 700px){
+    #menu-top{
+        display: none;
+    }
+    #mobile_menu{
+        visibility: visible;
+    }
+    #table{
+        margin: 2em auto 5em auto ;
+    }
+    table thead{
+        display: none;
+    }
+    .table td:before{
+        /*content: attr(data-label)!important;*/
+    }
+    td{
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
