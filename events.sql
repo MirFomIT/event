@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Май 11 2019 г., 18:33
+-- Время создания: Июл 09 2019 г., 13:04
 -- Версия сервера: 10.1.37-MariaDB
 -- Версия PHP: 7.3.0
 
@@ -38,13 +38,20 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `category`) VALUES
-(1, 'кино'),
+(1, 'new category'),
 (2, 'концерт'),
 (3, 'театр'),
 (4, 'праздник'),
 (5, 'мастер-класс'),
 (6, 'уроки'),
-(7, 'new category');
+(7, 'кино'),
+(9, 'кино2'),
+(10, 'сказка'),
+(11, 'сказка3'),
+(12, 'сказка4'),
+(13, 'сказка5'),
+(14, 'dfghj'),
+(15, 'jhgf');
 
 -- --------------------------------------------------------
 
@@ -65,7 +72,10 @@ INSERT INTO `city` (`id`, `city`) VALUES
 (1, 'Днепр'),
 (2, 'Киев'),
 (3, 'Одесса'),
-(4, 'Кропивницкий');
+(4, 'Кропивницкий'),
+(8, 'Кривой рог'),
+(9, 'Куйбышев'),
+(10, 'Алма Аты');
 
 -- --------------------------------------------------------
 
@@ -118,12 +128,12 @@ CREATE TABLE `event` (
 --
 
 INSERT INTO `event` (`id`, `category_id`, `count_places`, `create_at`, `updated_at`, `date`, `description`, `event_duration`, `image_id`, `status`, `title`, `user_id`, `country_id`, `city_id`, `home_id`, `street_id`, `room_id`, `time`) VALUES
-(1, 1, 25, NULL, '2019-01-20 21:31:33', '2019-01-20', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила', '04:24:00', 1, 1, 'Lorem Ipsum', 1, 1, 2, 3, 4, 4, '17:30:00'),
-(2, 1, 250, NULL, NULL, '2018-02-16', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '01:06:00', 2, 1, 'Lorem Ipsum', 2, 1, 2, 3, 2, 4, '12:00:00'),
+(2, 1, 250, NULL, NULL, '2018-02-16', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '01:06:00', 2, 0, 'Lorem Ipsum', 2, 1, 2, 3, 2, 4, '12:00:00'),
 (3, 2, 60, NULL, NULL, '2019-01-02', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '08:00:00', 3, 1, 'Lorem Ipsum', 1, 1, 3, 3, 3, 3, '03:45:00'),
-(4, 1, 25, NULL, NULL, '2018-09-05', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '09:15:00', 4, 1, 'Lorem Ipsum', 1, 1, 1, 2, 1, 4, '15:20:00'),
-(5, 1, 25, NULL, NULL, '2018-09-05', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '01:41:00', 4, 0, 'Lorem Ipsum', 1, 1, 4, 1, 4, 4, '15:20:00'),
-(6, 4, 60, NULL, NULL, '2019-01-02', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '08:00:00', 3, 1, 'Lorem Ipsum', 2, 1, 3, 1, 2, 3, '03:45:00');
+(4, 3, 25, NULL, NULL, '2018-09-05', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '09:15:00', 4, 1, 'Lorem Ipsum', 1, 1, 1, 2, 1, 4, '15:20:00'),
+(5, 5, 25, NULL, NULL, '2018-09-05', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '01:41:00', 4, 0, 'Lorem Ipsum', 1, 1, 4, 1, 4, 4, '15:20:00'),
+(6, 4, 60, NULL, NULL, '2019-01-02', 'Lorem Ipsum - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною рибою аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. Рибa не тільки успішно пережила ', '08:00:00', 3, 1, 'Lorem Ipsum', 2, 1, 3, 1, 2, 3, '03:45:00'),
+(25, 1, 3, NULL, NULL, '2019-06-12', 'lkjhg', '02:00:00', 37, 0, 'Сказка2', 1, NULL, 1, 1, 1, 1, '12:00:00');
 
 -- --------------------------------------------------------
 
@@ -144,7 +154,10 @@ INSERT INTO `home` (`id`, `home`) VALUES
 (1, '3'),
 (2, '7'),
 (3, '14'),
-(4, '76');
+(4, '76'),
+(5, '3-а'),
+(9, '123'),
+(10, '89');
 
 -- --------------------------------------------------------
 
@@ -167,7 +180,22 @@ INSERT INTO `image` (`id`, `path`) VALUES
 (3, '3.jpg'),
 (4, 'newyear.jpg'),
 (5, 'newyear1.jpg'),
-(6, 'newyear2.jpg');
+(6, 'newyear2.jpg'),
+(23, '20180709_192518.jpg'),
+(24, '20180218_142634.jpg'),
+(25, '20180821_071920.jpg'),
+(26, 'icon.png'),
+(27, '20180201_103015.jpg'),
+(28, '20180212_171406.jpg'),
+(29, '20180201_103015.jpg'),
+(30, '20180201_103015.jpg'),
+(31, '20180201_103015.jpg'),
+(32, '20180201_103015.jpg'),
+(33, '20180201_103015.jpg'),
+(34, '20180201_103015.jpg'),
+(35, '20180201_103015.jpg'),
+(36, '20180201_103015.jpg'),
+(37, '20180911_094000.jpg');
 
 -- --------------------------------------------------------
 
@@ -207,7 +235,10 @@ INSERT INTO `room` (`id`, `room`) VALUES
 (1, '1'),
 (2, '2'),
 (3, '115'),
-(4, '20');
+(4, '20'),
+(8, '321'),
+(9, '98'),
+(10, '3');
 
 -- --------------------------------------------------------
 
@@ -252,7 +283,11 @@ INSERT INTO `street` (`id`, `street`) VALUES
 (1, 'Рабочая'),
 (2, 'Прямая'),
 (3, 'Крутая'),
-(4, 'Обочная');
+(4, 'Обочная'),
+(5, 'Короленко'),
+(9, 'Криворожская'),
+(10, 'Куйбышевская'),
+(11, 'Алма Аты');
 
 -- --------------------------------------------------------
 
@@ -275,7 +310,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `auth_key`, `first_name`, `last_name`, `password`, `role_id`) VALUES
-(1, 'elena.mironenko1201@gmail.com', NULL, 'elena', 'mironenko', '$2y$13$QXW8Q1ucNzZuP1aPcnLQ9OY3nATYY4NvE2TvhfUulOFj2INgxqLvi', 1),
+(1, 'elena.mironenko1201@gmail.com', '2ge6-yjMNSbCD3DurT0f0yUcnAhwEJq1', 'elena', 'mironenko', '$2y$13$QXW8Q1ucNzZuP1aPcnLQ9OY3nATYY4NvE2TvhfUulOFj2INgxqLvi', 1),
 (2, 's.fomenko@gmail.com', NULL, 'svetlana', 'fomenko', '$2y$13$XGnD.nsXVRK5Pxe/jhUyY.IWMxpon/3yC6GLQQn7CbHO8xddJEyu2', 2),
 (15, 'qwe@nbv.bnm', NULL, 'qwer', '', '$2y$13$w6f40ucN1EKcN.9AjQwry.qmlWiuNhZtNc6aBsnj3OxfNIIrG24Dm', 2),
 (16, 'kolya@gmail.com', NULL, 'Коля', '', '$2y$13$APTASLq/RVI6f6dW1qqxI.LLo5HZO5hm2PKJwUKKGILw1TSbaMJpu', 2);
@@ -367,13 +402,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT для таблицы `city`
 --
 ALTER TABLE `city`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `country`
@@ -385,19 +420,19 @@ ALTER TABLE `country`
 -- AUTO_INCREMENT для таблицы `event`
 --
 ALTER TABLE `event`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT для таблицы `home`
 --
 ALTER TABLE `home`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `image`
 --
 ALTER TABLE `image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT для таблицы `role`
@@ -409,7 +444,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT для таблицы `room`
 --
 ALTER TABLE `room`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `social_button`
@@ -421,7 +456,7 @@ ALTER TABLE `social_button`
 -- AUTO_INCREMENT для таблицы `street`
 --
 ALTER TABLE `street`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `user`
@@ -443,7 +478,8 @@ ALTER TABLE `event`
   ADD CONSTRAINT `event_ibfk_4` FOREIGN KEY (`image_id`) REFERENCES `image` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `event_ibfk_5` FOREIGN KEY (`room_id`) REFERENCES `room` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `event_ibfk_6` FOREIGN KEY (`street_id`) REFERENCES `street` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `event_ibfk_7` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `event_ibfk_7` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `event_ibfk_8` FOREIGN KEY (`country_id`) REFERENCES `country` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ограничения внешнего ключа таблицы `user`
